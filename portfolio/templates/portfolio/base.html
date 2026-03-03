@@ -1,0 +1,83 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Gouse Velluri — Full Stack Developer Portfolio | Django · Python · React"/>
+  <title>Gouse Velluri | Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+</head>
+<body>
+<div class="layout">
+
+  <!-- ═══════════ SIDEBAR ═══════════ -->
+  <aside class="sidebar" id="sidebar">
+    <div class="sb-logo">
+      <div class="sb-mark">GV</div>
+      <div class="sb-name">Gouse Velluri <span>Full Stack Developer</span></div>
+    </div>
+
+    <div class="sb-section">Main</div>
+    <a class="nav-item" data-p="home">    <span class="ni-icon">🏠</span> Home</a>
+    <a class="nav-item" data-p="about">   <span class="ni-icon">👤</span> About Me</a>
+    <a class="nav-item" data-p="skills">  <span class="ni-icon">⚡</span> Skills</a>
+
+    <div class="sb-section">Experience</div>
+    <a class="nav-item" data-p="internships">  <span class="ni-icon">💼</span> Internships <span class="ni-badge">3</span></a>
+    <a class="nav-item" data-p="projects">     <span class="ni-icon">🚀</span> Projects    <span class="ni-badge">3</span></a>
+
+    <div class="sb-section">Credentials</div>
+    <a class="nav-item" data-p="education">      <span class="ni-icon">🎓</span> Education</a>
+    <a class="nav-item" data-p="certifications"> <span class="ni-icon">🏆</span> Certifications</a>
+
+    <div class="sb-section">Connect</div>
+    <a class="nav-item" data-p="contact"> <span class="ni-icon">✉️</span> Contact</a>
+
+    <div style="flex:1"></div>
+    <div class="sb-footer">
+      <div class="sbf-label">Open to Work</div>
+      <div class="sbf-text">Seeking Full Stack / Backend roles — 2026</div>
+      <a href="{% static 'images/resume.pdf' %}" download class="sbf-btn">⬇ Download Resume</a>
+    </div>
+  </aside>
+
+  <!-- ═══════════ MAIN ═══════════ -->
+  <div class="main" id="main">
+
+    <!-- Topbar -->
+    <div class="topbar">
+      <div class="tb-left">
+        <div class="tb-title" id="tb-title">Home</div>
+        <div class="tb-crumb" id="tb-crumb">Portfolio / Home</div>
+      </div>
+      <div class="tb-right">
+        <div class="tb-pill"><span class="tb-dot"></span>Available for Hire</div>
+        <div class="tb-av">GV</div>
+      </div>
+    </div>
+
+    <div class="content">
+      {% block content %}{% endblock %}
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p class="ft-text">© 2026 <strong>Gouse Velluri</strong>. Built with Django &amp; Python.</p>
+      <div class="ft-links">
+        <a href="https://github.com/dashboard"   target="_blank" class="ft-lnk" title="GitHub">⌥</a>
+        <a href="https://linkedin.com/in/gousevelluri" target="_blank" class="ft-lnk" title="LinkedIn" style="font-size:.65rem;font-weight:800">in</a>
+        <a href="mailto:vellurigouse620@gmail.com"   class="ft-lnk" title="Email">✉</a>
+      </div>
+    </footer>
+  </div>
+</div>
+
+<button class="mob-btn" id="mob-btn">☰</button>
+
+<script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

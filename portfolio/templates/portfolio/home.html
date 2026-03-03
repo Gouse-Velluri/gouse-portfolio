@@ -1,0 +1,586 @@
+{% extends 'portfolio/base.html' %}
+{% load static %}
+
+{% block content %}
+
+{# ══════════════════ HOME ══════════════════ #}
+<div id="pg-home" class="page">
+  <div class="home-grid">
+
+    <div class="card hero-card rv">
+      <div class="hero-badge"><span class="bd"></span>Django · Python · React Developer</div>
+      <div class="hero-name">Gouse Velluri</div>
+      <div class="hero-role">Full Stack Developer (Python | Django | React)</div>
+      <p class="hero-summary">
+        Motivated Full Stack Developer seeking an entry-level opportunity to apply foundational skills
+        and grow through hands-on experience. Committed to accountability, ethical standards, and
+        empathetic teamwork while building reliable, user-friendly applications.
+      </p>
+      <div class="hero-btns">
+        <button class="btn btn-purple" data-goto="projects">🚀 View Projects</button>
+        <a href="{% static 'images/resume.pdf' %}" download class="btn btn-outline">⬇ Download Resume</a>
+        <button class="btn btn-ghost" data-goto="contact">✉ Contact Me</button>
+      </div>
+      <div class="stats-row">
+        <div class="stat-box rv"><div class="stat-n" data-cnt="3" data-suf="+">3+</div><div class="stat-l">Projects Built</div></div>
+        <div class="stat-box rv"><div class="stat-n" data-cnt="3" data-suf="+">3+</div><div class="stat-l">Internships</div></div>
+        <div class="stat-box rv"><div class="stat-n" data-cnt="10" data-suf="+">10+</div><div class="stat-l">Technologies</div></div>
+      </div>
+    </div>
+
+    <div class="home-side">
+      <div class="card profile-card rv">
+        <div class="pf-ring">GV</div>
+        <div class="pf-name">Gouse Velluri</div>
+        <div class="pf-role">B.Tech CSE (Data Science) · QIS College · 2026</div>
+        <div class="pf-chips">
+          <span class="pfc">Django</span><span class="pfc">Python</span>
+          <span class="pfc">React</span><span class="pfc">MySQL</span>
+          <span class="pfc">Flask</span><span class="pfc">MongoDB</span>
+        </div>
+        <div class="pf-avail"><span class="tb-dot"></span>Open to Full-Time Roles</div>
+      </div>
+
+      <div class="card info-card rv">
+        <div class="ic-title">Quick Info</div>
+        <div class="ic-row"><div class="ic-icon">📧</div><div><div class="ic-label">Email</div><div class="ic-val">vellurigouse620@gmail.com</div></div></div>
+        <div class="ic-row"><div class="ic-icon">📞</div><div><div class="ic-label">Phone</div><div class="ic-val">+91 7075185523</div></div></div>
+        <div class="ic-row"><div class="ic-icon">📍</div><div><div class="ic-label">Location</div><div class="ic-val">Vinukonda, India 522647</div></div></div>
+        <div class="ic-row"><div class="ic-icon">🎓</div><div><div class="ic-label">Degree</div><div class="ic-val">B.Tech CSE · CGPA 8.0 · 2022–2026</div></div></div>
+        <div class="ic-row"><div class="ic-icon">💼</div><div><div class="ic-label">Status</div><div class="ic-val" style="color:var(--green);font-weight:700">Open to Work</div></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{# ══════════════════ ABOUT ══════════════════ #}
+<div id="pg-about" class="page">
+  <div class="sh rv">
+    <div class="sh-eye">About Me</div>
+    <h2 class="sh-title">Developer. Learner. <span class="ac">Problem Solver.</span></h2>
+    <p class="sh-desc">B.Tech CSE graduate with a passion for backend development and scalable web applications.</p>
+  </div>
+
+  <div class="about-grid">
+    <div class="card about-card rv">
+      <p class="about-body">
+        I am a B.Tech graduate in Computer Science &amp; Data Science with strong foundational knowledge in
+        backend development and system design. Through internships and academic projects, I have built
+        production-style web applications including management systems and analytics platforms. I focus on
+        writing clean code, designing structured databases, and implementing scalable backend logic.
+      </p>
+
+      <div class="edu-block">
+        <div class="edu-icon ec-1">🏛️</div>
+        <div>
+          <div class="edu-deg">B.Tech – Computer Science &amp; Data Science</div>
+          <div class="edu-col">QIS College of Engineering &amp; Technology · Ongole</div>
+          <div class="edu-pills"><span class="edu-pill">CGPA 8.0</span><span class="edu-pill">2022 – 2026</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card career-card rv">
+      <div class="sh-eye" style="margin-bottom:10px">Career Objective</div>
+      <p class="career-obj">
+        Seeking an entry-level Full Stack Developer role where I can apply backend development skills,
+        contribute to scalable web applications, and grow within a collaborative engineering environment.
+        Committed to delivering high-quality code and continuous learning.
+      </p>
+      <div class="sh-eye" style="margin-bottom:12px">Soft Skills</div>
+      <div class="soft-grid">
+        <div class="ss-item"><span class="ss-dot"></span>Problem Solving</div>
+        <div class="ss-item"><span class="ss-dot"></span>Team Collaboration</div>
+        <div class="ss-item"><span class="ss-dot"></span>Time Management</div>
+        <div class="ss-item"><span class="ss-dot"></span>Adaptability</div>
+        <div class="ss-item"><span class="ss-dot"></span>Accountability</div>
+        <div class="ss-item"><span class="ss-dot"></span>Ethical Standards</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{# ══════════════════ SKILLS ══════════════════ #}
+<div id="pg-skills" class="page">
+  <div class="sh rv">
+    <div class="sh-eye">Technical Skills</div>
+    <h2 class="sh-title">Tools &amp; <span class="ac">Technologies</span></h2>
+    <p class="sh-desc">My full-stack toolkit for building end-to-end web applications.</p>
+  </div>
+
+  <div class="skills-grid">
+    <div class="card sk-card rv">
+      <div class="sk-head">
+        <div class="sk-ico" style="background:linear-gradient(135deg,#ede9fe,#ddd6fe)">🐍</div>
+        <div><div class="sk-title">Backend</div><div class="sk-sub">Server-side Development</div></div>
+      </div>
+      <div class="skill-row"><div class="skill-top"><span class="skill-name">Python</span><span class="skill-pct">92%</span></div><div class="skill-bar"><div class="skill-fill fp" style="width:92%"></div></div></div>
+      <div class="skill-row"><div class="skill-top"><span class="skill-name">Django</span><span class="skill-pct">88%</span></div><div class="skill-bar"><div class="skill-fill fp" style="width:88%"></div></div></div>
+      <div class="skill-row"><div class="skill-top"><span class="skill-name">Flask</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill fp" style="width:75%"></div></div></div>
+      <div class="skill-row"><div class="skill-top"><span class="skill-name">REST API Development</span><span class="skill-pct">82%</span></div><div class="skill-bar"><div class="skill-fill fp" style="width:82%"></div></div></div>
+    </div>
+
+    <div class="card sk-card rv">
+      <div class="sk-head">
+        <div class="sk-ico" style="background:linear-gradient(135deg,#e0e7ff,#c7d2fe)">⚛️</div>
+        <div><div class="sk-title">Frontend</div><div class="sk-sub">UI &amp; Client-side</div></div>
+      </div>
+      <div class="skill-row"><div class="skill-top"><span class="skill-name">HTML5</span><span class="skill-pct">92%</span></div><div class="skill-bar"><div class="skill-fill fi" style="width:92%"></div></div></div>
+      <div class="skill-row"><div class="skill-top"><span class="skill-name">CSS3</span><span class="skill-pct">88%</span></div><div class="skill-bar"><div class="skill-fill fi" style="width:88%"></div></div></div>
+      <div class="skill-row"><div class="skill-top"><span class="skill-name">JavaScript (ES6+)</span><span class="skill-pct">78%</span></div><div class="skill-bar"><div class="skill-fill fi" style="width:78%"></div></div></div>
+      <div class="skill-row"><div class="skill-top"><span class="skill-name">React.js</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill fi" style="width:80%"></div></div></div>
+    </div>
+
+    <div class="card sk-card rv">
+      <div class="sk-head">
+        <div class="sk-ico" style="background:linear-gradient(135deg,#cffafe,#a5f3fc)">🗃️</div>
+        <div><div class="sk-title">Databases</div><div class="sk-sub">Storage &amp; Query</div></div>
+      </div>
+      <div class="skill-row"><div class="skill-top"><span class="skill-name">MySQL</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill fc" style="width:85%"></div></div></div>
+      <div class="skill-row"><div class="skill-top"><span class="skill-name">MongoDB</span><span class="skill-pct">74%</span></div><div class="skill-bar"><div class="skill-fill fc" style="width:74%"></div></div></div>
+      <div class="skill-row"><div class="skill-top"><span class="skill-name">SQLite</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill fc" style="width:90%"></div></div></div>
+    </div>
+
+    <div class="card sk-card rv">
+      <div class="sk-head">
+        <div class="sk-ico" style="background:linear-gradient(135deg,#fce7f3,#fbcfe8)">🔧</div>
+        <div><div class="sk-title">Tools</div><div class="sk-sub">Dev Environment</div></div>
+      </div>
+      <div class="skill-row"><div class="skill-top"><span class="skill-name">Git &amp; GitHub</span><span class="skill-pct">84%</span></div><div class="skill-bar"><div class="skill-fill fk" style="width:84%"></div></div></div>
+      <div class="skill-row"><div class="skill-top"><span class="skill-name">Postman</span><span class="skill-pct">78%</span></div><div class="skill-bar"><div class="skill-fill fk" style="width:78%"></div></div></div>
+      <div class="skill-row"><div class="skill-top"><span class="skill-name">VS Code</span><span class="skill-pct">95%</span></div><div class="skill-bar"><div class="skill-fill fk" style="width:95%"></div></div></div>
+    </div>
+  </div>
+
+  <div class="card tech-wrap rv" style="margin-top:0">
+    <div class="tw-title">All Technologies</div>
+    <div class="tech-cloud">
+      <div class="tc">🐍 Python</div><div class="tc">🎸 Django</div><div class="tc">🌶 Flask</div>
+      <div class="tc">⚛️ React.js</div><div class="tc">🟨 JavaScript</div><div class="tc">🌐 HTML5</div>
+      <div class="tc">🎨 CSS3</div><div class="tc">🗃️ MySQL</div><div class="tc">🍃 MongoDB</div>
+      <div class="tc">🪶 SQLite</div><div class="tc">🔧 Git</div><div class="tc">📮 Postman</div>
+      <div class="tc">💻 VS Code</div><div class="tc">☁️ Render</div>
+    </div>
+  </div>
+</div>
+
+{# ══════════════════ INTERNSHIPS ══════════════════ #}
+<div id="pg-internships" class="page">
+  <div class="sh rv">
+    <div class="sh-eye">Work Experience</div>
+    <h2 class="sh-title">Internships &amp; <span class="ac">Training</span></h2>
+    <p class="sh-desc">3 internships across Python, Django, MERN stack — real industry exposure.</p>
+  </div>
+
+  <div class="intern-list">
+    <div class="card intern-card rv">
+      <div class="intern-logo il-1">🐍</div>
+      <div>
+        <div class="intern-top">
+          <div><div class="intern-role">Python Full Stack Intern</div><div class="intern-co">Cognifyz Technologies</div></div>
+          <span class="intern-badge ib-p">AICTE Certified</span>
+        </div>
+        <p class="intern-desc">Completed AICTE-certified program; gained skills in Python, OOPS, REST APIs, SQL, and capstone projects. Built structured backend systems and practiced database design. Worked on projects following industry-style architecture.</p>
+        <div class="intern-tags"><span class="itag">Python</span><span class="itag">OOP</span><span class="itag">REST API</span><span class="itag">SQL</span><span class="itag">Django</span><span class="itag">Capstone Projects</span></div>
+      </div>
+    </div>
+
+    <div class="card intern-card rv">
+      <div class="intern-logo il-2">🏗️</div>
+      <div>
+        <div class="intern-top">
+          <div><div class="intern-role">MERN Full Stack Intern</div><div class="intern-co">BITS Pilani — Remote</div></div>
+          <span class="intern-badge ib-g">Completed</span>
+        </div>
+        <p class="intern-desc">Worked on MERN stack web apps (e-commerce, weather, task manager) under agile methodology. Implemented frontend-backend communication using REST APIs and improved understanding of application architecture.</p>
+        <div class="intern-tags"><span class="itag">MongoDB</span><span class="itag">Express</span><span class="itag">React</span><span class="itag">Node.js</span><span class="itag">Agile</span><span class="itag">Git</span></div>
+      </div>
+    </div>
+
+    <div class="card intern-card rv">
+      <div class="intern-logo il-3">💡</div>
+      <div>
+        <div class="intern-top">
+          <div><div class="intern-role">Python Full Stack Intern</div><div class="intern-co">CodeAlpha</div></div>
+          <span class="intern-badge ib-g">Completed</span>
+        </div>
+        <p class="intern-desc">Learned web technologies, cloud fundamentals, and project-based development with hands-on assignments. Built applications covering CRUD operations, authentication systems, and backend logic implementation.</p>
+        <div class="intern-tags"><span class="itag">Python</span><span class="itag">Django</span><span class="itag">Authentication</span><span class="itag">CRUD</span><span class="itag">Cloud Basics</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{# ══════════════════ PROJECTS ══════════════════ #}
+<div id="pg-projects" class="page">
+  <div class="sh rv">
+    <div class="sh-eye">My Work</div>
+    <h2 class="sh-title">Featured <span class="ac">Projects</span></h2>
+    <p class="sh-desc">Production-style Django applications — deployed and live.</p>
+  </div>
+
+  <div class="proj-grid">
+
+    {% if projects %}
+      {% for p in projects %}
+      <div class="card proj-card rv">
+        <div class="proj-header">
+          <span class="proj-emoji">{{ p.emoji }}</span>
+          <div class="proj-title">{{ p.title }}</div>
+          <div class="proj-tagline">{{ p.description|truncatewords:10 }}</div>
+        </div>
+        <div class="proj-body">
+          {% if p.problem %}<div class="proj-lbl">Problem</div><p class="proj-text">{{ p.problem }}</p>{% endif %}
+          {% if p.solution %}<div class="proj-lbl">Solution</div><p class="proj-text">{{ p.solution }}</p>{% endif %}
+          {% if p.feature_list %}
+          <div class="proj-lbl">Key Features</div>
+          <ul class="proj-features">{% for f in p.feature_list %}<li>{{ f }}</li>{% endfor %}</ul>
+          {% endif %}
+          <div class="proj-lbl">Tech Stack</div>
+          <div class="proj-stack">{% for t in p.tech_list %}<span class="ptag">{{ t }}</span>{% endfor %}</div>
+          {% if p.learning_list %}
+          <div class="proj-lbl">Key Learnings</div>
+          <ul class="proj-features">{% for l in p.learning_list %}<li>{{ l }}</li>{% endfor %}</ul>
+          {% endif %}
+        </div>
+        <div class="proj-footer">
+          {% if p.live_link %}<a href="{{ p.live_link }}" target="_blank" class="plink pl-live">🌐 Live Demo</a>{% endif %}
+          {% if p.github_link %}<a href="{{ p.github_link }}" target="_blank" class="plink pl-gh">⌥ GitHub</a>{% endif %}
+        </div>
+      </div>
+      {% endfor %}
+
+    {% else %}
+    {# ── Static fallback with full resume content ── #}
+    <div class="card proj-card rv">
+      <div class="proj-header">
+        <span class="proj-emoji">🚢</span>
+        <div class="proj-title">Ship Management System</div>
+        <div class="proj-tagline">Fleet Maintenance Platform — Assets, Analytics &amp; Workflows</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-lbl">Problem</div>
+        <p class="proj-text">Organizations face challenges in manually tracking fleet assets and maintenance records, causing operational inefficiencies.</p>
+        <div class="proj-lbl">Solution</div>
+        <p class="proj-text">Developed a web-based system to manage asset lifecycle, schedule maintenance updates, and generate operational reports.</p>
+        <div class="proj-lbl">Key Features</div>
+        <ul class="proj-features">
+          <li>Asset registration and tracking</li>
+          <li>Maintenance scheduling</li>
+          <li>Admin dashboard</li>
+          <li>Data filtering and management</li>
+        </ul>
+        <div class="proj-lbl">Tech Stack</div>
+        <div class="proj-stack"><span class="ptag">Django</span><span class="ptag">MySQL</span><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">Python</span></div>
+        <div class="proj-lbl">Key Learnings</div>
+        <ul class="proj-features"><li>Database relationship modeling</li><li>Admin customization</li><li>Backend architecture structuring</li></ul>
+      </div>
+      <div class="proj-footer">
+        <a href="https://shipmanagementsystem.onrender.com" target="_blank" class="plink pl-live">🌐 Live Demo</a>
+        <a href="https://github.com/dashboard" class="plink pl-gh">⌥ GitHub</a>
+      </div>
+    </div>
+
+    <div class="card proj-card rv">
+      <div class="proj-header">
+        <span class="proj-emoji">🏥</span>
+        <div class="proj-title">Hospital Management System</div>
+        <div class="proj-tagline">MedCare — Full-Stack Django Hospital Portal</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-lbl">Problem</div>
+        <p class="proj-text">Manual handling of appointments and prescriptions causes inefficiencies in hospital operations.</p>
+        <div class="proj-lbl">Solution</div>
+        <p class="proj-text">Built a full-stack Django hospital system with patient/doctor portals, appointment &amp; prescription modules.</p>
+        <div class="proj-lbl">Key Features</div>
+        <ul class="proj-features">
+          <li>Appointment booking system</li>
+          <li>Prescription management</li>
+          <li>Role-based user authentication</li>
+          <li>Admin control panel</li>
+        </ul>
+        <div class="proj-lbl">Tech Stack</div>
+        <div class="proj-stack"><span class="ptag">Django</span><span class="ptag">SQLite</span><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">Bootstrap</span></div>
+        <div class="proj-lbl">Key Learnings</div>
+        <ul class="proj-features"><li>Role-based authentication</li><li>Multi-model database design</li><li>CRUD operations at scale</li></ul>
+      </div>
+      <div class="proj-footer">
+        <a href="https://hospital-management-87dq.onrender.com/" class="plink pl-live">🌐 Live Demo</a>
+        <a href="https://github.com/dashboard" class="plink pl-gh">⌥ GitHub</a>
+      </div>
+    </div>
+
+    <div class="card proj-card rv">
+      <div class="proj-header">
+        <span class="proj-emoji">💰</span>
+        <div class="proj-title">Finance Tracker</div>
+        <div class="proj-tagline">Personal Income &amp; Expense Management with Visual Reports</div>
+      </div>
+      <div class="proj-body">
+        <div class="proj-lbl">Problem</div>
+        <p class="proj-text">Individuals need structured tracking of financial transactions and monthly expense analysis.</p>
+        <div class="proj-lbl">Solution</div>
+        <p class="proj-text">Created a system to record, categorize, and analyze income and expense data with visual reports.</p>
+        <div class="proj-lbl">Key Features</div>
+        <ul class="proj-features">
+          <li>Income &amp; expense categorization</li>
+          <li>Monthly financial reports</li>
+          <li>Data filtering and visualization</li>
+          <li>Secure login system</li>
+        </ul>
+        <div class="proj-lbl">Tech Stack</div>
+        <div class="proj-stack"><span class="ptag">Django</span><span class="ptag">MySQL</span><span class="ptag">JavaScript</span><span class="ptag">Chart.js</span></div>
+        <div class="proj-lbl">Key Learnings</div>
+        <ul class="proj-features"><li>Query optimization</li><li>Data aggregation logic</li><li>Reporting system design</li></ul>
+      </div>
+      <div class="proj-footer">
+        <a href="https://finance-tracker-3ma3.onrender.com/" class="plink pl-live">🌐 Live Demo</a>
+        <a href="https://github.com/dashboard" class="plink pl-gh">⌥ GitHub</a>
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+
+{# ══════════════════ EDUCATION ══════════════════ #}
+<div id="pg-education" class="page">
+  <div class="sh rv">
+    <div class="sh-eye">Academic Background</div>
+    <h2 class="sh-title">My <span class="ac">Education</span></h2>
+  </div>
+
+  <div class="edu-timeline">
+    <div class="card edu-card rv">
+      <div class="ec-icon ec-1">🏛️</div>
+      <div>
+        <div class="ec-degree">B.Tech — Computer Science &amp; Data Science</div>
+        <div class="ec-school">QIS College of Engineering &amp; Technology · Ongole</div>
+        <div class="ec-pills"><span class="ec-pill">CGPA: 8.0</span><span class="ec-pill">2022 – 2026</span><span class="ec-pill">Completed</span></div>
+      </div>
+      <div class="ec-year">2022 – 2026</div>
+    </div>
+
+    <div class="card edu-card rv">
+      <div class="ec-icon ec-2">📚</div>
+      <div>
+        <div class="ec-degree">Intermediate — MPC (Maths, Physics, Chemistry)</div>
+        <div class="ec-school">VIT Junior College · Narsaraopet</div>
+        <div class="ec-pills"><span class="ec-pill">GPA: 71%</span><span class="ec-pill">2022</span></div>
+      </div>
+      <div class="ec-year">2022</div>
+    </div>
+
+    <div class="card edu-card rv">
+      <div class="ec-icon ec-3">🏫</div>
+      <div>
+        <div class="ec-degree">Class X — Secondary School Education</div>
+        <div class="ec-school">GITAMS High School · Vinukonda</div>
+        <div class="ec-pills"><span class="ec-pill">GPA: 95%</span><span class="ec-pill">2020</span></div>
+      </div>
+      <div class="ec-year">2020</div>
+    </div>
+  </div>
+
+  <!-- Languages -->
+  <div class="sh rv" style="margin-top:28px">
+    <div class="sh-eye">Languages Known</div>
+  </div>
+  <div class="card rv" style="padding:20px 28px;display:flex;gap:14px;flex-wrap:wrap">
+    <div style="display:flex;align-items:center;gap:9px;padding:10px 18px;border-radius:50px;background:var(--bg);border:1.5px solid var(--border);font-size:.84rem;font-weight:600;color:var(--text-soft)">🇬🇧 English — Professional</div>
+    <div style="display:flex;align-items:center;gap:9px;padding:10px 18px;border-radius:50px;background:var(--bg);border:1.5px solid var(--border);font-size:.84rem;font-weight:600;color:var(--text-soft)">🇮🇳 Telugu — Native</div>
+    <div style="display:flex;align-items:center;gap:9px;padding:10px 18px;border-radius:50px;background:var(--bg);border:1.5px solid var(--border);font-size:.84rem;font-weight:600;color:var(--text-soft)">🇮🇳 Hindi — Limited (Read/Write)</div>
+  </div>
+</div>
+
+{# ══════════════════ CERTIFICATIONS ══════════════════ #}
+<div id="pg-certifications" class="page">
+  <div class="sh rv">
+    <div class="sh-eye">Credentials</div>
+    <h2 class="sh-title">Certifications &amp; <span class="ac">Achievements</span></h2>
+  </div>
+
+  {# ── Dynamic certs from DB ── #}
+  {% if certificates %}
+  <div class="cert-grid">
+    {% for cert in certificates %}
+    <div class="card cert-card rv">
+      <div class="cert-top">
+        <div class="cert-icon cci-{% if cert.color == 'indigo' %}i{% elif cert.color == 'green' %}g{% elif cert.color == 'orange' %}o{% else %}p{% endif %}">
+          {% if cert.color == 'indigo' %}💻
+          {% elif cert.color == 'green' %}🐍
+          {% elif cert.color == 'orange' %}⚡
+          {% else %}🏆{% endif %}
+        </div>
+        <div>
+          <div class="cert-title">{{ cert.title }}</div>
+          <div class="cert-issuer">{{ cert.issuer }}</div>
+          {% if cert.issued_date %}<div style="font-size:.7rem;color:var(--text-muted);margin-bottom:6px">{{ cert.issued_date }}</div>{% endif %}
+          <span class="cert-badge">✓ Certified</span>
+        </div>
+      </div>
+
+      {# Preview image if uploaded #}
+      {% if cert.certificate_image %}
+      <div class="cert-preview"><img src="{{ cert.certificate_image.url }}" alt="{{ cert.title }}"/></div>
+      {% else %}
+      <div class="cert-no-preview">📜 Certificate Preview</div>
+      {% endif %}
+
+      <div class="cert-footer">
+        {# View button — shows modal #}
+        {% if cert.certificate_image %}
+        <button class="btn btn-purple btn-sm cert-view-btn"
+          data-src="{{ cert.certificate_image.url }}"
+          data-type="image"
+          data-name="{{ cert.title }}">👁 View</button>
+        {% endif %}
+
+        {% if cert.certificate_file %}
+        <button class="btn btn-outline btn-sm cert-view-btn"
+          data-src="{{ cert.certificate_file.url }}"
+          data-type="pdf"
+          data-name="{{ cert.title }}">📄 Open PDF</button>
+        <a href="{{ cert.certificate_file.url }}" download class="btn btn-ghost btn-sm">⬇ Download</a>
+        {% endif %}
+
+        {% if cert.credential_url %}
+        <a href="{{ cert.credential_url }}" target="_blank" class="btn btn-green btn-sm">🔗 Verify</a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+
+  {% else %}
+  {# ── Static fallback ── #}
+  <div class="cert-grid">
+    <div class="card cert-card rv">
+      <div class="cert-top">
+        <div class="cert-icon cci-p">🌐</div>
+        <div>
+          <div class="cert-title">Web Development</div>
+          <div class="cert-issuer">LearnTube — HTML, CSS, React.js, MongoDB, MySQL</div>
+          <span class="cert-badge">✓ Certified</span>
+        </div>
+      </div>
+      <div class="cert-no-preview">📜 Upload certificate in Admin Panel</div>
+      <div class="cert-footer">
+        <span style="font-size:.75rem;color:var(--text-muted);padding:8px 0">Go to <strong>/admin</strong> → Certificates → Add Certificate → Upload PDF/Image</span>
+      </div>
+    </div>
+
+    <div class="card cert-card rv">
+      <div class="cert-top">
+        <div class="cert-icon cci-i">🤖</div>
+        <div>
+          <div class="cert-title">AI Python for Web Backend</div>
+          <div class="cert-issuer">Code Tantra, Beep</div>
+          <span class="cert-badge">✓ Certified</span>
+        </div>
+      </div>
+      <div class="cert-no-preview">📜 Upload certificate in Admin Panel</div>
+      <div class="cert-footer">
+        <span style="font-size:.75rem;color:var(--text-muted);padding:8px 0">Go to <strong>/admin</strong> → Certificates → Add Certificate → Upload PDF/Image</span>
+      </div>
+    </div>
+  </div>
+  {% endif %}
+
+  {# ── How to upload guide ── #}
+  <div class="card rv" style="padding:22px 28px;margin-top:0;display:flex;align-items:center;gap:16px;background:var(--purple-ultra);border:1px solid var(--border)">
+    <div style="width:42px;height:42px;border-radius:12px;background:var(--purple-pale);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0">📤</div>
+    <div>
+      <div style="font-family:var(--font-h);font-size:.9rem;font-weight:700;color:var(--text);margin-bottom:3px">Upload Your Certificates</div>
+      <div style="font-size:.8rem;color:var(--text-soft)">Go to <strong style="color:var(--purple-mid)">/admin</strong> → Certificates → Add Certificate → Upload PDF or Image → Save. They appear here instantly with View &amp; Download buttons.</div>
+    </div>
+    <a href="/admin/portfolio/certificate/add/" target="_blank" class="btn btn-purple btn-sm" style="flex-shrink:0;white-space:nowrap">+ Add Certificate</a>
+  </div>
+
+  {# ── Achievements ── #}
+  <div class="sh rv" style="margin-top:28px">
+    <div class="sh-eye">Achievements</div>
+    <h2 class="sh-title" style="font-size:1.6rem">Competitive <span class="ac">Activities</span></h2>
+  </div>
+
+  <div class="card ach-list">
+    <div class="ach-item rv">
+      <div class="ach-icon">💻</div>
+      <div><div class="ach-name">Competitive Coding Challenges — Naukri, HackerRank</div><div class="ach-desc">Participated in multiple coding contests focusing on Python, data structures and algorithms.</div></div>
+    </div>
+    <div class="ach-item rv">
+      <div class="ach-icon">⚡</div>
+      <div><div class="ach-name">Codequezt #22 Coding Challenge</div><div class="ach-desc">Participated in Codequezt #22 competitive programming challenge.</div></div>
+    </div>
+    <div class="ach-item rv">
+      <div class="ach-icon">🏅</div>
+      <div><div class="ach-name">Naukri BrandQuezt #22 — Startups and Unicorns of India</div><div class="ach-desc">Participated in BrandQuezt challenge focused on Indian startup ecosystem knowledge.</div></div>
+    </div>
+    <div class="ach-item rv">
+      <div class="ach-icon">🎯</div>
+      <div><div class="ach-name">Naukri Techquezt #22 — Coding Culture &amp; Developer Life</div><div class="ach-desc">Completed the Techquezt challenge on coding culture, tools and developer best practices.</div></div>
+    </div>
+    <div class="ach-item rv">
+      <div class="ach-icon">🚀</div>
+      <div><div class="ach-name">3 Production Projects Deployed on Render</div><div class="ach-desc">Ship Management System, Hospital Management System, Finance Tracker — all deployed live.</div></div>
+    </div>
+    <div class="ach-item rv">
+      <div class="ach-icon">🎓</div>
+      <div><div class="ach-name">Academic Excellence — CGPA 8.0</div><div class="ach-desc">Maintaining CGPA 8.0 in B.Tech CSE (Data Science) at QIS College of Engineering &amp; Technology.</div></div>
+    </div>
+  </div>
+</div>
+
+{# ══════════════════ CONTACT ══════════════════ #}
+<div id="pg-contact" class="page">
+  <div class="sh rv">
+    <div class="sh-eye">Get In Touch</div>
+    <h2 class="sh-title">Let's Build <span class="ac">Together</span></h2>
+    <p class="sh-desc">Open to full-time roles, internships and collaborations. I reply within 24 hours.</p>
+  </div>
+
+  <div class="contact-layout">
+    <div class="card contact-info rv">
+      <div class="sh-eye" style="margin-bottom:4px">Contact Details</div>
+      <p style="font-size:.85rem;color:var(--text-soft);margin-bottom:2px">Feel free to reach out through any channel below.</p>
+      <div class="ci-list2">
+        <a href="mailto:vellurigouse620@gmail.com" class="ci2">
+          <div class="ci2-ic">📧</div>
+          <div><div class="ci2-l">Email</div><div class="ci2-v">vellurigouse620@gmail.com</div></div>
+        </a>
+        <a href="tel:+917075185523" class="ci2">
+          <div class="ci2-ic">📞</div>
+          <div><div class="ci2-l">Phone</div><div class="ci2-v">+91 7075185523</div></div>
+        </a>
+        <a href="https://linkedin.com/in/gousevelluri" target="_blank" class="ci2">
+          <div class="ci2-ic" style="font-size:.65rem;font-weight:800;color:#0a66c2">in</div>
+          <div><div class="ci2-l">LinkedIn</div><div class="ci2-v">Velluri Gouse — LinkedIn</div></div>
+        </a>
+        <a href="https://github.com/dashboard" target="_blank" class="ci2">
+          <div class="ci2-ic">⌥</div>
+          <div><div class="ci2-l">GitHub</div><div class="ci2-v">Velluri Gouse — GitHub</div></div>
+        </a>
+        <a href="https://leetcode.com/gousevelluri" target="_blank" class="ci2">
+          <div class="ci2-ic">🧩</div>
+          <div><div class="ci2-l">LeetCode</div><div class="ci2-v">Velluri Gouse — LeetCode</div></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="card form-card rv">
+      <div class="sh-eye" style="margin-bottom:16px">Send a Message</div>
+      <form id="cf" action="/contact/" method="POST">
+        {% csrf_token %}
+        <div class="fg-row">
+          <div><label class="fl">Name</label><input class="fi" type="text" name="name" placeholder="Your full name" required/></div>
+          <div><label class="fl">Email</label><input class="fi" type="email" name="email" placeholder="your@email.com" required/></div>
+        </div>
+        <div class="fg"><label class="fl">Subject</label><input class="fi" type="text" name="subject" placeholder="Job opportunity / Project / Collaboration"/></div>
+        <div class="fg"><label class="fl">Message</label><textarea class="ft" name="message" placeholder="Tell me about the opportunity or project…" required></textarea></div>
+        <button type="submit" class="btn btn-purple btn-submit">🚀 Send Message</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
